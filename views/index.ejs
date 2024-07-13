@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Form</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 text-white min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-md">
+        <div class="bg-zinc-800 p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-6 text-center">Create User</h2>
+            <form action="/create" method="post" class="space-y-4">
+                <div>
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-300">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name" class="w-full p-3 bg-zinc-700 border border-zinc-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-300">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" class="w-full p-3 bg-zinc-700 border border-zinc-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="image" class="block mb-2 text-sm font-medium text-gray-300">Image URL</label>
+                    <input type="text" id="image" name="image" placeholder="Image URL" class="w-full p-3 bg-zinc-700 border border-zinc-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <input type="submit" value="Create User" class="w-full p-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-white font-semibold cursor-pointer">
+                </div>
+                <div class="mt-20 flex items-center justify-center">
+                    <a href="/read" class="text-blue-400 hover:text-blue-500">Go to All Users</a>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
